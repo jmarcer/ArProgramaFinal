@@ -1,31 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: sans-serif;
 }
+
+.headerPrincipal{
+    background-color: #CAC4F7;
+    padding: 20px 70px;
+    
+}
+
+.containerPrincipal{    
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;  
+}
+
+.logo-header{
+    width: 100px;
+    height: 100px;
+    padding:   0px 20px 0px 0px;
+}
+
+.headerPrincipal-titulo{
+    margin-left: 7px;
+    font-weight: bolder;
+    font-size: 24px;
+    
+}
+
+.headerPrincipal-link{
+    text-decoration: none;
+    color:#320557;
+    font-weight: 700px;
+    font-size: 30px;
+}
+
+.headerPrincipal-nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.headerPrincipal-nav-link{
+    text-decoration: none;
+    color: #320557;
+    width: auto;
+    margin: 0 0 0 50px;
+    font-size: 20px;
+}
+
+
+.containerBanner{
+    height: 500px;
+    width: auto;
+    background-image: url(../img/home/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner{
+    width: auto;
+}
+
+.h2Banner{
+    font-weight: bolder;
+    color: #320557;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.h2span{
+    color: #320557;
+    font-weight: 900px;
+}
+/*termina hader*/
+
 
 a {color: blue;
 }
 
-body{ 
-    display: flex;
-    }
 
 .form{
     margin: auto;
-    padding: 4.5em 3em;
-    text-align: left;
+  text-align: center;
 }
 
 .form__titulo{
-    font-size: 2rem;
-    margin-bottom: .5em;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    
 }
+.form__titulo2
+{ text-align: center;}
 
 .form__contenedor{
-    margin-top: 2em;
-    display: grid;
-    gap: 2.5em;
+    margin-top: 1em;
+display: grid;
+    gap: 1em;
 }
 
 .form__grupo{
@@ -34,17 +116,101 @@ body{
 }
 
 .form__input{
-    width: 100%;
+    display: flex;
+    width: 40em;
     background: none;
     color: dimgray;
     padding: .6em .3em;
     outline: none;
     border-bottom: 1px solid var(--color);
     border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .boton{ 
 width: min-content;
 margin: auto;
 margin-top: 2em;
+}
+/*footer*/
+.footerPrincipal{
+    background-color: #CAC4F7;
+
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.containerfooterNav{
+
+}
+
+.navFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 0px
+
+}
+
+.footer-nav-link{
+    text-decoration: none;
+    color:#320557;
+    padding: 5px 5px 5px 0px;
+    font-size: large;
+
+}
+
+.containerRedes{
+    text-align: center;
+
+}
+
+.h2footer{
+    font-weight: bold;
+    font-size: x-large
+
+}
+
+.containerIconos{
+    padding: 10px;
+
+}
+
+.imgRedes{
+    width: 25px;
+    padding: 10px;
+}
+
+.containerLogoFooter{
+    display: flex;
+    text-align: inherit;
+    align-items: center;
+
+}
+
+.imglogoft{
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+
+.containerLogoTxt{
+
+}
+
+
+.h3footer{
+    padding: 5px 5px 5px 0px ;
+
 }
