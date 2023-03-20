@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    color: #320557;
 }
 
 .headerPrincipal{
@@ -90,6 +91,7 @@ body{
     width: 90%;
     text-align: center;
     margin: 34px;
+    padding-bottom: 25px;
 
 }
 
@@ -110,6 +112,7 @@ body{
 
 .imgCentral{
     width: 300px;
+    border: #320557 solid;
 
 }
 
@@ -118,34 +121,75 @@ body{
     color: white;
     width: 150px;
     height: 45px;
+    border-color: #320557;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 3px 3px #CAC4F7;
+    
 
 }
 
 /*Termina Seccion 1*/
-
+.divisor{
+    color:#320557;
+   
+}
 /*Empieza Seccion 2*/
 
 
 .sectionHistorias{
+    width: auto;
+    text-align: center;
+    margin: 34px;
+    padding-top: 15px;
+    padding-bottom: 15px;
    
 }
 .h1Historias{
     text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+}
+
+.h2Historias{
+    text-align: center;
+    font-size: large;
+    font-weight:bold;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .containerHistorias{
     display: flex;
-    width: 90%;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+   
 }
 
 .containerCard{
     display: flex;
-    width: 90%;
+    width: 50%;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    height: auto;
+    background-color: #CAC4F7;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+ 
 
 }
 
 .imgHistorias{
+    margin: inherit;
 
 }
 
@@ -154,14 +198,22 @@ body{
 }
 
 .textoHistorias{
-
+    padding-left: 10px;
 }
 
+
+
 .h1TextH{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
 
 }
 
 .pHistorias{
+    line-height: 30px;
 
 }
 

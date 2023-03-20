@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    color: #320557
 }
 
 .headerPrincipal{
@@ -136,7 +137,9 @@ display: grid;
 .boton{ 
 width: min-content;
 margin: auto;
-margin-top: 2em;
+margin-top: 5px;
+background-color: #320557;
+color: white;
 }
 /*footer*/
 .footerPrincipal{
