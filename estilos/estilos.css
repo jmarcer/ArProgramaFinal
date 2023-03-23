@@ -190,11 +190,12 @@ body{
 
 .imgHistorias{
     margin: inherit;
+    box-sizing: border-box !important;
 
 }
 
 .imgCard{
-
+    box-sizing: border-box !important;
 }
 
 .textoHistorias{
@@ -270,8 +271,12 @@ body{
 
 }
 
-.imgRedes{
-    width: 25px;
+.iconosRedes{
+    position:;
+}
+
+.imgRedes{ 
+    width: 25px !important;
     padding: 10px;
 }
 
