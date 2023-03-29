@@ -1,6 +1,7 @@
-body {
+body{
+    height: 100%;
+    background-color: #320557;
     font-family: sans-serif;
-    color: #320557
 }
 
 .headerPrincipal{
@@ -56,164 +57,95 @@ body {
     font-size: 20px;
 }
 
+/*Empieza form*/
 
-.containerBanner{
-    height: 500px;
-    width: auto;
-    background-image: url(../img/home/banner1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.contacto-form{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+}
+
+input{
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #320557;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 105px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #320557;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label{
+    display: block;
+    float: center;
+}
+
+button{
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #320557;
+    border-color: #320557;
+    border-style: solid;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button{
+    color: #fff;
 
 }
 
-.banner{
-    width: auto;
-}
-
-.h2Banner{
-    font-weight: bolder;
+span{
     color: #320557;
-    font-size: 45px;
-    text-align: center;
-    padding: 15px;
-
 }
 
-.h2span{
+.aviso{
+    font-size: 13px;
     color: #320557;
-    font-weight: 900px;
-}
-/*termina hader*/
-
-
-a {color: blue;
 }
 
-
-.form{
-    margin: auto;
-  text-align: center;
+.h1form{
+    font-size: 39px;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
-.form__titulo{
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    
-}
-.form__titulo2
-{ text-align: center;}
-
-.form__contenedor{
-    margin-top: 1em;
-display: grid;
-    gap: 1em;
-}
-
-.form__grupo{
-    position: relative;
-    --color: #5757577e;
-}
-
-.form__input{
-    display: flex;
-    width: 40em;
-    background: none;
-    color: dimgray;
-    padding: .6em .3em;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-    border-radius: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.boton{ 
-width: min-content;
-margin: auto;
-margin-top: 5px;
-background-color: #320557;
-color: white;
-}
-/*footer*/
-.footerPrincipal{
-    background-color: #CAC4F7;
-
-}
-
-.containerFooter{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-
-}
-
-.containerfooterNav{
-
-}
-
-.navFooter{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 10px 10px 0px
-
-}
-
-.footer-nav-link{
-    text-decoration: none;
+h3{
+    font-size: 16px;
+    padding-bottom: 30px;
     color:#320557;
-    padding: 5px 5px 5px 0px;
-    font-size: large;
-
 }
 
-.containerRedes{
-    text-align: center;
-
+p{
+    font-size: 14px;
+    color: #320557;
 }
-
-.h2footer{
-    font-weight: bold;
-    font-size: x-large
-
-}
-
-.containerIconos{
-    padding: 10px;
-
-}
-
-.imgRedes{
-    width: 25px;
-    padding: 10px;
-}
-
-.containerLogoFooter{
-    display: flex;
-    text-align: inherit;
-    align-items: center;
-
-}
-
-.imglogoft{
-    width: 90px;
-    height: 90px;
-    padding: 5px;
-}
-
-.containerLogoTxt{
-
-}
-
-
-.h3footer{
-    padding: 5px 5px 5px 0px ;
-
+.formulario textarea:focus{
+    outline:0;
 }

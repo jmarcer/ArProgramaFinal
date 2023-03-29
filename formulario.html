@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,121 +8,115 @@
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="stylesheet" href="estilos/formulario.css">
     <title>Contacto</title>
-    
 </head>
 <body>
+
     <header class="headerPrincipal">
         <div class="containerPrincipal">
-          <div class="logo-container">
-            <img class="logo-header" src="logo/logo.png" alt="logo" />
-            <h1 class="headerPrincipal-titulo">
-              <a class="headerPrincipal-link" href="#">ADOPTÁ UN AMIGO</a>
-            </h1>
-          </div>
-          <nav class="headerPrincipal-nav">
-            <a class="headerPrincipal-nav-link" href="index.html">HOME</a>
-            <a class="headerPrincipal-nav-link" href="formulario.html">CONTACTO</a>
-            <a class="headerPrincipal-nav-link" href="nosotros.html">NOSOTROS</a>
-            <a class="headerPrincipal-nav-link" href="proseso.html">TURNOS</a>
-          </nav>
+            <div class="logo-container">
+                <img class="logo-header" src="logo/logo.png" alt="logo">
+                <h1 class="headerPrincipal-titulo">
+                    <a class="headerPrincipal-link" href="#">ADOPTÁ UN AMIGO</a>
+                </h1>
+            </div>
+            <nav class="headerPrincipal-nav">
+                <a class="headerPrincipal-nav-link" href="index.html">HOME</a>
+                <a class="headerPrincipal-nav-link" href="formulario.html">CONTACTO</a>
+                <a class="headerPrincipal-nav-link" href="nosotros.html">NOSOTROS</a>
+            </nav>
         </div>
-      </header>
-    
-<form class="form">
-<h1 class="form__titulo">FORMULARIO DE ADOPCIÓN</h1>
-    <h2 class="form__titulo2">Para ver el reglamento de adopcion haga click <a href="#" class="form__link">ACÁ</a></h2>
 
-     <div class="form__contenedor">
-     <div class="form__grupo"> 
-    <label for="name" class="form__label">Nombre y Apellido :</label>
-     <input type="text" id="name" class="form__input" placeholder=" ">
+    </header>
     
-     </div>
-     <div class="form__contenedor">
-        <div class="form__grupo"> 
-        <label for="direction" class="form__label">Dirección :</label>
-        <input type="text" id="direction" class="form__input" placeholder=" ">
-        
+    <section class="contacto-form">
+        <div class="formulario">
+            <h1 class="h1form">Formulario de contacto</h1>
+            <h3>Para ver el reglamento de adopción hace click <a href="">ACA</a> </h3> 
+
+            <form action="submeter-formulario.php" method="post">
+
+                <p>
+                    <label for="nombre" class="colocar-nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir-nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar-email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir-email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+
+                <p>
+                    <label for="telefono" class="colocar-telefono">Teléfono
+                        <span class="obligatorio">*</span>      </label>
+                    <input type="tel" name="introducir-telefono" id="telefono" required="obligatorio" placeholder="Escribe tu teléfono">
+                </p>
+
+                <p>
+                    <label for="ocupacion" class="colocar-telefono">¿A qué te dedicás?
+                        <span class="obligatorio">*</span>      </label>
+                    <input type="text" name="introducir-ocupacion" id="ocuacion"  required="obligatorio" placeholder="Escribe a que te dedicás">
+                </p>
+
+                <p>
+                    <label for="vivienda" class="colocar-vivienda">¿Con quién vivís?
+                        <span class="obligatorio">*</span>      </label>
+                    <input type="text" name="introducir-vivienda" id="vivienda"  required="obligatorio" placeholder="Escribe a que te dedicás">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar-mensaje">¿Por qué te gustaría adoptar?
+                        <span class="obligatorio">*</span>      </label>
+                    <textarea name="introducir-mensaje" class="texto-mensaje" id="mensaje"  required="obligatorio" placeholder="Escribe por que te gustaría adoptar..."></textarea>
+                </p>
+
+
+                <button type="submit"  name="enviar-formulario" id="enviar">Enviar</button>
+
+                <button type="reset"  name="resetear-formulario" id="resetear">Limpiar datos</button>
+
+                <p class="aviso"><span class="obligatorio">*</span>los campos son obligatorios</p>
+            </form>
         </div>
-        <div class="form__contenedor">
-            <div class="form__grupo"> 
-            <label for="telf" class="form__label">Teléfono :</label>
-            <input type="text" id="telf" class="form__input" placeholder=" ">
-          </div>
+    </section>
+
+    <footer class="footerPrincipal">
+        <div class="containerFooter">
+            <div class="containerfooterNav">
+            <h2 class="h2footer">Menú</h2>
+                <nav class="navFooter">
+                    <a class="footer-nav-link" href="index.html">Home</a>
+                    <a class="footer-nav-link" href="formulario.html">Contacto</a>
+                    <a class="footer-nav-link" href="nosotros.html">Nosotros</a>
+
+                </nav>
+            </div>
+
+            <div class="containerRedes">
+                <h2 class="h2footer">Seguinos en:</h2>
+                <div class="containerIconos">
+                    <a class="iconoRedes" href=""><img class="imgRedes" src="iconos/facebook.png" alt="facebook"></a>
+                    <a class="iconoRedes" href=""><img class="imgRedes" src="iconos/instagram.png" alt="Instagram"></a>
+                    <a class="iconoRedes" href=""><img class="imgRedes" src="iconos/twitter.png" alt="tweeter"></a>
             
-            <div class="form__contenedor">
-            <div class="form__grupo"> 
-            <label for="email" class="form__label">Email :</label>
-            <input type="text" id="email" class="form__input" placeholder=" ">
+                </div>    
             </div>
-                
-            <div class="form__contenedor">
-            <div class="form__grupo"> 
-            <label for="pregunta1" class="form__label">¿A q te dedicás? :</label>
-            <input type="text" id="pregunta1" class="form__input" placeholder=" ">
-            
+
+            <div class="containerLogoFooter">
+                <img class="imglogoft" src="logo/logo.png" alt="logoFooter">
+                <div class="containerLogoTxt">
+                    <h2 class="h2footer">Adoptá un amigo</h2>
+                    <h3 class="h3footer">Todos los derechos reservados</h3>
+                </div>
             </div>
-                    
-            <div class="form__contenedor">
-            <div class="form__grupo"> 
-            <label for="pregunta2" class="form__label">¿Con quien vivís? :</label>
-            <input type="text" id="pregunta2" class="form__input" placeholder=" ">
-            
-            </div>
-                        
-            <div class="form__contenedor">
-            <div class="form__grupo"> 
-            <label for="pregunta3" class="form__label">¿Por que te gustaría adoptar? :</label>
-            <textarea  type="text" id="pregunta3" class="form__input" placeholder="Escribe por que te gustaría adoptar " cols="30" rows="10"></textarea>
-           
-            </div>
-        
-                              
-</div>
-</form>
-<input type="submit" class="boton" value="VOLVER AL MENU">   
-<input type="submit" class="boton 2" value="ENVIAR FORMULARIO">
-<footer class="footerPrincipal">
-  <div class="containerFooter">
-    <div class="containerfooterNav">
-      <h2 class="h2footer">Menú</h2>
-      <nav class="navFooter">
-        <a class="footer-nav-link" href="index.html">Home</a>
-        <a class="footer-nav-link" href="formulario.html">Contacto</a>
-        <a class="footer-nav-link" href="nosotros.html">Nosotros</a><a class="footer-nav-link" href="proseso.html">Turnos</a>
-        
-      </nav>
 
-    </div>
+        </div>
 
-    <div class="containerRedes">
-      <h2 class="h2footer">Seguinos en:</h2>
-      <div class="containerIconos">
-        <a class="iconoRedes" href=""
-          ><img class="imgRedes" src="iconos/facebook.png" alt="facebook"
-        /></a>
-        <a class="iconoRedes" href=""
-          ><img class="imgRedes" src="iconos/instagram.png" alt="Instagram"
-        /></a>
-        <a class="iconoRedes" href=""
-          ><img class="imgRedes" src="iconos/twitter.png" alt="tweeter"
-        /></a>
-      </div>
-    </div>
+    </footer>
 
-    <div class="containerLogoFooter">
-      <img class="imglogoft" src="logo/logo.png" alt="logoFooter" />
-      <div class="containerLogoTxt">
-        <h2 class="h2footer">Adoptá un amigo</h2>
-        <h3 class="h3footer">Todos los derechos reservados</h3>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-<script src="scritp/formulario.js"></script>
+    
 </body>
-
 </html>
