@@ -54,27 +54,48 @@
       </div>
 
       <div class="container">
-        <div class="row setup-content" id="step-1">
+        <div class="row setup-content align-middle" id="step-1">
           <div class="col-xs-12">
             <div class="col-md-12">
-              <h3>Datos del Adoptante</h3>
+              <br> <h3>Datos del Adoptante</h3> <br>
               <!-- content go here -->
-              <div class="row" style="text-align: center;">
+              <div class="grid row-gap-3">
                 <div class="col-6">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name"/>
+                  <label for="nombre" class="form-label"><b> Nombre<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" required="obligatorio"/>
                 </div>
                 <br>
                 <div class="col-6">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name"/>
+                  <label for="apellido" class="form-label"><b> Apellido<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required="obligatorio"/>
                 </div>
                 <br>
                 <div class="col-6">
-                  <input type="mail" class="form-control" placeholder="mail@ejemplo.com" aria-label="Email"/>
+                  <label for="dni" class="form-label"><b> DNI<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="DNI" aria-label="IdNumber" required="obligatorio"/>
+                </div>
+                 <br>
+                 <div class="col-6">
+                  <label for="edad" class="form-label"><b> Edad<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="Edad" aria-label="number" required="obligatorio"/>
+                </div>
+                 <br>
+                <div class="col-6">
+                  <label for="telefono" class="form-label"><b> Teléfono<span class="obligatorio">*</span>:</b></label>
+                  <input type="tel" class="form-control" placeholder="Teléfono" aria-label="number" required="obligatorio"/>
+                </div>
+                <br>
+                <div class="col-6">
+                  <label for="mail" class="form-label"><b> E-mail<span class="obligatorio">*</span>:</b></label>
+                  <input type="mail" class="form-control" placeholder="mail@ejemplo.com" aria-label="Email" required="obligatorio"/>
                 </div>
               </div>
               <br>
 
               <button style=" background-color: #cac4f7; width: 250px; border-color: #320557; " class="btn btn-light btn-block nextBtn pull-right" type="button">Siguiente</button>
+              <br><br>
+              <p class="aviso"><span class="obligatorio">*</span><b>Los campos son obligatorios</b> </p>
+        
             </div>
           </div>
         </div>
@@ -85,17 +106,38 @@
             <div class="col-md-12">
               <h3>Datos de la Mascota a Adoptar</h3>
               <!-- content go here -->
-              <button
-                style="
-                  background-color: #cac4f7;
-                  width: 250px;
-                  border-color: #320557;
-                "
-                class="btn btn-light btn-block nextBtn pull-right"
-                type="button"
-              >
-                Siguiente
-              </button>
+              <div class="grid row-gap-3">
+                <div class="col-6">
+                  <label for="nombre" class="form-label"><b> Nombre de la mascota<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="Nombre de la mascota" aria-label="Pet name" required="obligatorio"/>
+                </div>
+                <br>
+                <div class="col-6">
+                  <p><label for="tipo" class="form-label"><b> Seleccione el tipo de mascota<span class="obligatorio">*</span> </b></label>  </p>
+                  <div class="input-group mb-3">             
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>Tipo de mascota</option>
+                      <option value="1">Gato</option>
+                      <option value="2">Perro</option>
+                      <option value="3">Conejo</option>
+                    </select>                    
+                  </div>                
+                </div>
+                
+                <div class="col-6">
+                  <label for="dni" class="form-label"><b> Código único de la mascota (CUM)<span class="obligatorio">*</span>:</b></label>
+                  <input type="text" class="form-control" placeholder="Ingrese el CUM" aria-label="IdNumber" required="obligatorio"/>
+                </div>
+              
+                 <br>
+                
+                
+              </div>
+              <br>
+
+              <button style="background-color: #cac4f7; width: 250px;  border-color: #320557;" class="btn btn-light btn-block nextBtn pull-right" type="button">Siguiente</button>
+              <br><br>
+              <p class="aviso"><span class="obligatorio">*</span><b>Los campos son obligatorios</b> </p>
             </div>
           </div>
         </div>
