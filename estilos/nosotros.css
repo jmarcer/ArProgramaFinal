@@ -123,6 +123,15 @@ h2{
 	margin-left: 10px;
 	margin-bottom: 20px;
 }
+
+.containerNos{
+	display: flex;
+}
+
+.pContainerNos{
+	display: flex;
+
+}
 .parrcont2{
 	width: 50%;
 }
