@@ -4,4 +4,4 @@ estilos del form de proceso, bootstrap me cambia header y footer
 armar paso 3 con datos del paso 1 y 2
 jquery? la estoy usando?
 api externa, aplicar datos en...?
-
+cambiar el display de la fecha y hora
