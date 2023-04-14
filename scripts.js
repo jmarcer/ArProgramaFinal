@@ -1,13 +1,13 @@
 function llenarPantallaConfirmacion(){
     console.log("llenarPantallaConfirmacion1");
-    if (!document.getElementById("datoNombreApellido").checkValidity()) {
+   /* if (!document.getElementById("datoNombreApellido").reportValidity()) {
         console.log("desde el check nombre")
         document.getElementById("datoNombreApellido").reportValidity();
-    }
+    }*/
     document.getElementById("valorNombreApellido").textContent = document.getElementById("datoNombreApellido").value;
 
     console.log("llenarPantallaConfirmacion2");
-    document.getElementById("datoDni").reportValidity();
+    //document.getElementById("datoDni").reportValidity();
     document.getElementById("valorDni").textContent = document.getElementById("datoDni").value;
     
     console.log("llenarPantallaConfirmacion3");
@@ -35,7 +35,62 @@ function validacionForm2(){
     //return document.querySelector('form').reportValidity();
 }
 
-/*$(document).ready(function () {
-    console.log("ready")
-    $("#basic-form").reportValidity();
-})*/
+function ValidarCamposForm(){
+    $("#basic-form").valid();
+}
+
+
+$(document).ready(function () {
+    console.log("ready");
+    $("#basic-form").validate({
+        rules: {
+            datoNombreApellido :{
+                required: true
+            },
+
+            datoDni:{
+                required: true
+            },
+
+            datoEdad:{
+                required: true
+            },
+
+            datoTel:{
+                required: true
+            },
+
+            datoMail:{
+                required: true
+            },
+
+            datoNombreMascota:{
+                required: true
+            },
+
+            datoTipoMascota:{
+                required: true
+            },
+
+            datoCum:{
+                required: true
+            },
+
+            datoFechaHora:{
+                required: true
+            }
+
+
+        }
+    });
+})
+
+$("#basic-form").submit(function(event) {
+    console.log("desde prevent default");
+    event.preventDefault();
+    return false;
+
+});
+/*
+datoFechaHora
+*/
