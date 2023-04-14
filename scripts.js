@@ -23,7 +23,7 @@ function llenarPantallaConfirmacion(){
     console.log("llenarPantallaConfirmacion8");
     document.getElementById("valorCum").textContent = document.getElementById("datoCum").value;
     console.log("llenarPantallaConfirmacion9");
-    document.getElementById("valorFechaHora").textContent = document.getElementById("datoFechaHora").value;
+    document.getElementById("valorFechaHora").textContent = new Date(Date.parse(document.getElementById("datoFechaHora").value)).toLocaleString();
 }
 function validacionForm1(){
     //console.log('msj onclick'); 
@@ -93,4 +93,5 @@ $("#basic-form").submit(function(event) {
 });
 /*
 datoFechaHora
+.toLocaleString()
 */
