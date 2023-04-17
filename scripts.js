@@ -1,15 +1,8 @@
 function llenarPantallaConfirmacion(){
     console.log("llenarPantallaConfirmacion1");
-   /* if (!document.getElementById("datoNombreApellido").reportValidity()) {
-        console.log("desde el check nombre")
-        document.getElementById("datoNombreApellido").reportValidity();
-    }*/
     document.getElementById("valorNombreApellido").textContent = document.getElementById("datoNombreApellido").value;
-
     console.log("llenarPantallaConfirmacion2");
-    //document.getElementById("datoDni").reportValidity();
     document.getElementById("valorDni").textContent = document.getElementById("datoDni").value;
-    
     console.log("llenarPantallaConfirmacion3");
     document.getElementById("valorEdad").textContent = document.getElementById("datoEdad").value;
     console.log("llenarPantallaConfirmacion4");
@@ -25,73 +18,51 @@ function llenarPantallaConfirmacion(){
     console.log("llenarPantallaConfirmacion9");
     document.getElementById("valorFechaHora").textContent = new Date(Date.parse(document.getElementById("datoFechaHora").value)).toLocaleString();
 }
-function validacionForm1(){
-    //console.log('msj onclick'); 
-    //return document.querySelector('form').checkValidity();
-}
-
-function validacionForm2(){
-    //console.log('msj onclick'); 
-    //return document.querySelector('form').reportValidity();
-}
 
 function ValidarCamposForm(){
     $("#basic-form").valid();
 }
 
 
-$(document).ready(function () {
-    console.log("ready");
-    $("#basic-form").validate({
-        rules: {
-            datoNombreApellido :{
-                required: true
-            },
+//Codigo Api/Ajax
 
-            datoDni:{
-                required: true
-            },
+const HTMLResponse = document.querySelector("#app");
+const templateUL = document.getElementsByClassName(`ulNos`);
 
-            datoEdad:{
-                required: true
-            },
+console.log("antes de la llamada")
+$.ajax({ method: "GET", url: "http://jsonplaceholder.typicode.com/users" })
+    .done(function (users) {
+        //Mostrar por consola la respuesta de la API
+        console.log(users)
 
-            datoTel:{
-                required: true
-            },
+        //Mostrar respuesta de API en un componente HTML
+        //document.getElementById("response").innerHTML = users;
 
-            datoMail:{
-                required: true
-            },
-
-            datoNombreMascota:{
-                required: true
-            },
-
-            datoTipoMascota:{
-                required: true
-            },
-
-            datoCum:{
-                required: true
-            },
-
-            datoFechaHora:{
-                required: true
-            }
+        //Mostrar respuesta de API en un componente HTML recorriendo cada usuario
+        for(let i=0; i<4;i++){
+            let user = users[i];
+            let elem = document.createElement("li");
+            elem.appendChild(
+                document.createTextNode(`${user.name}`)
+            );
+            let elem2 = document.createElement("li");
+            elem2.appendChild(
+                document.createTextNode(`${user.email.toLowerCase()}`)
+            );
+            templateUL[i].appendChild(elem);
+            templateUL[i].appendChild(elem2);
 
 
         }
-    });
-})
+        
+        /*users.forEach((users) => {
+            let elem = document.createElement("li");
+            elem.appendChild(
+                document.createTextNode(`Nombre: ${users.name}, Email: ${users.email}`)
+            );
+            templateUL.appendChild(elem);
+        });
+        HTMLResponse.appendChild(templateUL);*/
 
-$("#basic-form").submit(function(event) {
-    console.log("desde prevent default");
-    event.preventDefault();
-    return false;
-
-});
-/*
-datoFechaHora
-.toLocaleString()
-*/
+    }
+    )

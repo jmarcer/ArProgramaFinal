@@ -62,13 +62,30 @@ h2{
 }
 
 .containerNos{
+	width: 90%;
 	display: flex;
+	justify-content: space-evenly;
+	margin: 10px;
+	padding: 10px;
+	
+	
 }
 
 .pContainerNos{
 	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 25%;
+	margin: 10px;
 
 }
+
+.ulNos{
+	font-size: medium;
+	margin: 10px;
+	text-align: left;
+}
+
 .parrcont2{
 	width: 50%;
 }
@@ -94,9 +111,8 @@ h2{
 li{	
 	font-family:sans-serif;
 	font-size: 20px;
-	margin-left: 40px;
-	list-style-image:url(ArProgramaFinal-main/img/pngeggpati.png);
-	text-align: justify;
+	
+	
 }
 
 b{
